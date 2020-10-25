@@ -26,23 +26,23 @@ let messages = {
     },
 };
 
-app.get('/expressjs', (req, res) => {
+app.get('/expressjsapp', (req, res) => {
     return res.send(Object.values(users));
 });
 
-app.get('/expressjs/users', (req, res) => {
+app.get('/expressjsapp/users', (req, res) => {
     return res.send(Object.values(users));
 });
 
-app.get('/expressjs/users/:userId', (req, res) => {
+app.get('/expressjsapp/users/:userId', (req, res) => {
     return res.send(users[req.params.userId]);
 });
 
-app.get('/expressjs/messages', (req, res) => {
+app.get('/expressjsapp/messages', (req, res) => {
     return res.send(Object.values(messages));
 });
 
-app.get('/expressjs/messages/:messageId', (req, res) => {
+app.get('/expressjsapp/messages/:messageId', (req, res) => {
     return res.send(messages[req.params.messageId]);
 });
 
